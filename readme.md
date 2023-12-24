@@ -1,7 +1,7 @@
 
 # Movie Recommendation App
 
-Proje içerisinde aşağıdaki teknolojiler kullanılmıştır.
+Proje içerisinde aşağıdaki teknolojiler/kütüphaneler kullanılmıştır.
 ```
 .NET 7
 EfCore
