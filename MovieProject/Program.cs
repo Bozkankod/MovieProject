@@ -37,7 +37,7 @@ app.UseReDoc(options =>
 app.UseHangfireDashboard("/hangfire",new DashboardOptions
 {
     DashboardTitle = "Movie Recommendation App Hangfire Dasboard",
-    AppPath = "/"
+    AppPath = "/api-docs/index.html"
 });
 
 RecurringJobs.Add();
