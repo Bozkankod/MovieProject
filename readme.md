@@ -11,6 +11,8 @@ RabbitMQ
 JWT
 Swagger
 Hangfire
+PagedList
+ReDoc
 ```
 
 Proje çalıştığında otomatik olarak 1000 adet film otomatik DB'ye kayıt edilip cache ediliyor.

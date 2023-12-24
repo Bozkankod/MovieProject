@@ -28,11 +28,10 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 app.UseSwagger();
-app.UseSwaggerUI(c =>
+app.UseReDoc(options =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movie Project App");
-    c.RoutePrefix = string.Empty;
-
+    options.DocumentTitle = "Movie Recommendation App";
+    options.SpecUrl = "/swagger/v1/swagger.json";
 });
 
 app.UseHangfireDashboard("/hangfire",new DashboardOptions
