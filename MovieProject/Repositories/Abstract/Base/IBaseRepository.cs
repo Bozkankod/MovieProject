@@ -16,11 +16,8 @@ namespace MovieProject.Repositories.Abstract.Base
 
         Task<T> Login(string email, string password);
 
-        Task<T> Register(T model);
-
         Task<T> SendEmail(T model);
 
-        Task<T> AddMovies(T model);
     }
 
 

@@ -63,25 +63,12 @@ namespace MovieProject.Repositories.Concrete.Base
 
         }
 
-        public async Task<T> Register(T model)
-        {
-            await Table.AddAsync(model);
-            await _applicationDbContext.SaveChangesAsync();
-            return model;
-        }
-
         public async Task<T> SendEmail(T model)
         {
             await SendEmail(model);
             return model;
         }
-
-        public async Task<T> AddMovies(T model)
-        {
-            await Table.AddAsync(model);
-            await _applicationDbContext.SaveChangesAsync();
-            return model;
-        }
+  
 
     }
 }

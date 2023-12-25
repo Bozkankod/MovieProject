@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
     
 var configuration = builder.Configuration;
 builder.Services.AddControllers();
-builder.Services.AddQueue(configuration);
 builder.Services.AddDependencies(configuration);
 builder.Services.AddDbContext(configuration);
+builder.Services.AddQueue(configuration);
 builder.Services.AddJwt(configuration);
 builder.Services.AddSwagger();
 
