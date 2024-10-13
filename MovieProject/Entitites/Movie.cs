@@ -17,5 +17,7 @@ namespace MovieProject.Entitites
         public int VoteCount { get; set; }
 
         public virtual ICollection<Vote> Votes { get; set; }
+
+
     }
 }

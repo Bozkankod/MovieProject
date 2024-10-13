@@ -25,8 +25,8 @@ public class MovieController : BaseController
     [HttpGet]
     public IActionResult Get([FromQuery] int pageNumber, int pageSize)
     {
-
-        var moviesJson = _movieService.Get(pageNumber, pageSize);
+        int skip = (pageNumber - 1) * pageSize;
+        var moviesJson = _movieService.Get(skip, pageSize);
         if (moviesJson == null)
         {
             return BadRequest(new { Errors = "Movie not found" });
